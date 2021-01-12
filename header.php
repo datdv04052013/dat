@@ -47,9 +47,9 @@
                     <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-music"></span> Song <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="">Top VN</a></li>
-                            <li><a href="">Top US</a></li>
-                            <li><a href="">Top UK</a></li>
+                            <li><a href="">Nhac viet nam</a></li>
+                            <li><a href="">Nhac au my</a></li>
+                            <li><a href="">Nhac han quoc</a></li>
                         </ul>
                     </li>
                         
