@@ -54,7 +54,8 @@
               <i class="fas fa-map-marker"></i>
               <input type="text"required placeholder="Address" name="address">
           </div>
-            <input type="submit"  class="button" value="Register" name="register">
+          
+          <input type="submit"  class="button" value="Register" name="register">
           <p>Already have an account<a href="login.php"> Click here</a> to sign in.</p>
 
           <h5>Or sign up with:</h5>
@@ -91,9 +92,9 @@ if (isset($_POST['register'])) {
         $phone = $_POST['phone'];
         $address = $_POST['address'];
         $confirm_password = $_POST['confirm_password']; 
-        $admin = 0;
+        $role = 'user';
 
-        $check_exist = mysqli_query($con, "select * from customer where username = '$username'");
+        $check_exist = mysqli_query($con, "select * from users where username = '$username'");
 
         $username_count = mysqli_num_rows($check_exist);
 
@@ -105,7 +106,7 @@ if (isset($_POST['register'])) {
         } 
         else
         {
-            $run_insert = mysqli_query($con, "insert into customer(fullname, address, email, phone, username, password, admin) values ('$fullname','$address','$email','$phone', '$username', '$password', '$admin') ");
+            $run_insert = mysqli_query($con, "insert into users(fullname, address, email, phone, username, password, role) values ('$fullname','$address','$email','$phone', '$username', '$password', '$role') ");
             if ($run_insert) 
             {
                 echo "<script>alert('register sucessfully, welcome to my website')</script>";
