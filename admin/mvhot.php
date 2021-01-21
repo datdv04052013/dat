@@ -1,9 +1,9 @@
 <?php
 		include "connect.php";
-	 	$sql = "select * from song, artist where song.artist_id = artist.id ";
+	 	$sql = "select * from songs, artists where songs.artist_id = artists.id ";
          if( isset($_GET['search']) ){
             $name = mysqli_real_escape_string($con, htmlspecialchars($_GET['search']));
-            $sql = "select * from song, artist where song.artist_id = artist.id and song.name='$name' or artist.artist_name= '$name' ";
+            $sql = "select * from songs, artists where songs.artist_id = artists.id and songs.name='$name' or artists.artist_name= '$name' ";
          }
 	 	$result = $con->query($sql);
 
