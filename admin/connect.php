@@ -1,5 +1,5 @@
 <?php
-$con = new mysqli('34.200.32.20', 'datdv', '', 'musicshop');
+$con = new mysqli('34.230.84.57', 'root', '', 'musicshop');
 
 // Check connection
 if (mysqli_connect_errno()) {
