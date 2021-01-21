@@ -4,10 +4,10 @@
 	 	
          if( isset($_GET['search']) ){
             $name = mysqli_real_escape_string($con, htmlspecialchars($_GET['search']));
-            $sql = "select * from song, artist where song.artist_id = artist.id and name = '$name'";
+            $sql = "select * from songs, artists where songs.artist_id = artists.id and name = '$name'";
 		 }
 		 else{
-			$sql = "select * from song, artist where song.artist_id = artist.id ";
+			$sql = "select * from songs, artists where songs.artist_id = artist.id ";
 		 }
 	 	$result = $con->query($sql);
 
