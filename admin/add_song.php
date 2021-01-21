@@ -123,7 +123,7 @@ $file_tmp = $_FILES['sound']['tmp_name'];
 move_uploaded_file($image_tmp,"images/$image");
 move_uploaded_file($file_tmp,"images/$file");
 
-$insert_product = " insert into song(name, genre_id, artist_id, image, sound,date_release,price ) 
+$insert_product = " insert into songs(name, genre_id, artist_id, image, sound,date_release,price ) 
 values ('$name','$genre','$artist','$image','$file','$date','$price') ";
 
 $insert_pro = mysqli_query($con, $insert_product);
