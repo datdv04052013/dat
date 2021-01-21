@@ -137,9 +137,6 @@ if($insert_pro){
 }
 ?>
 
-<?php
-  include 'footer.php';
-?>
 
 
 
@@ -157,3 +154,9 @@ if($insert_pro){
         window.history.replaceState( null, null, window.location.href );
     }
 </script>
+
+
+<?php
+  include 'footer.php';
+?>
+
