@@ -3,7 +3,6 @@
 session_start();
 include 'connect.php';
 include 'header.php';
-include 'banner.php';
 ?>
 <div class="container mt-3">
     <div class="form_box">
