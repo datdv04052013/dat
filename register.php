@@ -78,7 +78,7 @@
 
 
 <?php
-$con = new mysqli('localhost', 'root', '', 'shopmusic');
+$con = new mysqli('34.230.84.57', 'datdv', '123@123a', 'shopmusic');
 if (!$con) {
     echo "ket noi that bai";
 }
