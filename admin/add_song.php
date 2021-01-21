@@ -71,7 +71,7 @@ include 'header.php';
         
       </tr>
     
-        <tr>
+    <tr>
       <td><b>Song Image: </b></td>
       <td><input type="file" name="image" /></td>
     </tr>
